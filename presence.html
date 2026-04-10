@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>(function(){var t=localStorage.getItem('rel-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Presence – Reliance Internationer Africa Oil &amp; Gas</title>
+  <meta name="description" content="Reliance Internationer Africa serves SADC countries: Malawi, South Africa, Zimbabwe, Zambia, Mozambique, Botswana and Tanzania." />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Reliance Internationer Africa Home">
+        <img src="assets/images/logo.png" alt="Reliance Internationer Africa Oil &amp; Gas" class="nav-logo-img" />
+        <div class="logo-tagline">Plan – Operate – Maintain – Optimize</div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="presence.html" class="active">Our Presence</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta"><a href="contact.html" class="btn btn-orange">Get a Quote</a></div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme"></button>
+      <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="presence.html">Our Presence</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-orange">Get a Quote</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO BANNER -->
+    <section class="page-hero" aria-label="Our Presence hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a><span>›</span>Our Presence</p>
+        <h1 class="fade-in">Our Presence</h1>
+        <p class="fade-in fade-in-delay-1" style="color:var(--ice-white);max-width:600px;margin-top:0.75rem;">
+          Headquartered in Lilongwe, Malawi, serving import terminals, inland depots and distribution markets across the SADC region.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="section section-dark" aria-labelledby="map-heading">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 id="map-heading" class="fade-in">SADC Region Operations Map</h2>
+          <div class="divider"></div>
+          <p class="fade-in fade-in-delay-1">Click on any marker to view location details and operational role.</p>
+        </div>
+        <div id="map-full" role="application" aria-label="Interactive SADC operations map"></div>
+      </div>
+    </section>
+
+    <!-- COUNTRY CARDS -->
+    <section class="section section-mid" aria-labelledby="countries-heading">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 id="countries-heading" class="fade-in">Countries We Serve</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="country-cards">
+          <div class="country-card fade-in">
+            <div class="country-card-header">
+              <img src="assets/images/flags/malawi.png" alt="Malawi" class="country-flag-img">
+              <div class="role">Headquarters &amp; LPG Plant</div>
+            </div>
+            <p class="country-desc">Lilongwe, 50-ton LPG storage and operational hub</p>
+          </div>
+          <div class="country-card fade-in fade-in-delay-1">
+            <div class="country-card-header">
+              <img src="assets/images/flags/Southafrica.svg" alt="South Africa" class="country-flag-img">
+              <div class="role">Source Market</div>
+            </div>
+            <p class="country-desc">Port &amp; terminal access for LPG importation</p>
+          </div>
+          <div class="country-card fade-in fade-in-delay-2">
+            <div class="country-card-header">
+              <img src="assets/images/flags/zimbabwe.png" alt="Zimbabwe" class="country-flag-img">
+              <div class="role">Distribution Market</div>
+            </div>
+            <p class="country-desc">Cross-border supply and bulk LPG distribution</p>
+          </div>
+          <div class="country-card fade-in">
+            <div class="country-card-header">
+              <img src="assets/images/flags/zambia.svg" alt="Zambia" class="country-flag-img">
+              <div class="role">Distribution Market</div>
+            </div>
+            <p class="country-desc">Inland distribution across Lusaka and beyond</p>
+          </div>
+          <div class="country-card fade-in fade-in-delay-1">
+            <div class="country-card-header">
+              <img src="assets/images/flags/mozambique.svg" alt="Mozambique" class="country-flag-img">
+              <div class="role">Distribution Market</div>
+            </div>
+            <p class="country-desc">Coastal and inland LPG supply network</p>
+          </div>
+          <div class="country-card fade-in fade-in-delay-2">
+            <div class="country-card-header">
+              <img src="assets/images/flags/botswana.svg" alt="Botswana" class="country-flag-img">
+              <div class="role">Distribution Market</div>
+            </div>
+            <p class="country-desc">Growing LPG distribution partnerships</p>
+          </div>
+          <div class="country-card fade-in">
+            <div class="country-card-header">
+              <img src="assets/images/flags/tanzania.svg" alt="Tanzania" class="country-flag-img">
+              <div class="role">Distribution Market</div>
+            </div>
+            <p class="country-desc">East African corridor distribution access</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LPG VALUE CHAIN -->
+    <section class="section section-dark" aria-labelledby="value-chain-heading">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 id="value-chain-heading" class="fade-in">LPG Value Chain</h2>
+          <div class="divider"></div>
+          <p class="fade-in fade-in-delay-1">Understanding the journey of LPG from production to your door</p>
+        </div>
+        <div class="value-chain fade-in">
+          <div class="chain-stage">
+            <div class="chain-pct">11%</div>
+            <h4>Natural Gas Production</h4>
+            <p>Extracted as a by-product of oil and gas refining</p>
+          </div>
+          <div class="chain-stage">
+            <div class="chain-pct">42%</div>
+            <h4>Liquefaction &amp; Storage</h4>
+            <p>Processed and stored at import terminals and depots</p>
+          </div>
+          <div class="chain-stage">
+            <div class="chain-pct">20%</div>
+            <h4>Shipping &amp; Import</h4>
+            <p>International and cross-border logistics by tanker and road</p>
+          </div>
+          <div class="chain-stage">
+            <div class="chain-pct">27%</div>
+            <h4>Distribution</h4>
+            <p>Last-mile delivery to wholesalers, dealers and end users</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section id="cta-banner" aria-labelledby="cta-presence-heading">
+      <div class="container">
+        <h2 id="cta-presence-heading">Operating in Your Region?</h2>
+        <p>Get in touch to discuss distribution partnerships, supply agreements and logistics.</p>
+        <a href="contact.html" class="btn btn-navy">Contact Our Team</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo.png" alt="Reliance Internationer Africa Oil &amp; Gas" class="footer-logo-img" />
+          <div class="footer-tagline">Plan – Operate – Maintain – Optimize</div>
+          <p class="footer-desc">Africa-based bulk LPG supplier serving the SADC region.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="mailto:Info@relianceenergix.com" aria-label="Email us"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="presence.html">Our Presence</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="icon" aria-hidden="true"><i data-lucide="map-pin"></i></span>
+            <span>PO Box 805, Game Complex, Lilongwe, Malawi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon" aria-hidden="true"><i data-lucide="phone"></i></span>
+            <span>(+265) 0993 94 38 80</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon" aria-hidden="true"><i data-lucide="mail"></i></span>
+            <span><a href="mailto:Info@relianceenergix.com">Info@relianceenergix.com</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Reliance Internationer Africa Oil &amp; Gas. All rights reserved.</p>
+        <p>Designed for <a href="https://www.relianceenergix.com">relianceenergix.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
